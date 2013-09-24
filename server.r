@@ -17,8 +17,8 @@ shinyServer(function(input, output) {
 gl1<-c("MLM","K-EMMA")
 df1<-c("10k20","UNEAK9")
 model1<-c("PC","Q")
- plot.temp<-masterglmmlm.test
-    #plot.temp<-masterglmmlm.test[masterglmmlm.test$GLMMLM %in% gl1 & masterglmmlm.test$model %in% model1 & masterglmmlm.test$df %in% df1,]
+ #plot.temp<-masterglmmlm.test
+    plot.temp<-masterglmmlm.test[masterglmmlm.test$GLMMLM %in% gl1 & masterglmmlm.test$model %in% model1 & masterglmmlm.test$df %in% df1,]
     p<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model)), data=plot.temp)+geom_point(aes(shape=df))+facet_wrap(~Locus)
    
     print(p)
