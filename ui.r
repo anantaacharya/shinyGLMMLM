@@ -6,7 +6,7 @@ shinyUI(pageWithSidebar(
  
   sidebarPanel(
  
-    wellPanel(
+    
       selectInput("GLMMLM", "GLMMLM:",
                    c("GLM" = "GLM",
                      "MLM" = "MLM",
@@ -14,18 +14,18 @@ shinyUI(pageWithSidebar(
                       "K-SSR"="K-SSR"), selected="K-EMMA", multiple=TRUE)
  
       
-    ),
+    ,
  
-   wellPanel(
+   
       selectInput("model", "model:",
                    c("NAIVE" = "NAIVE",
                      "PC" = "PC",
                      "Q" = "Q"), selected="Q", multiple=TRUE)
  
       
-    ),
+    ,
 
-  wellPanel(
+ 
     selectInput("df", "data:",
                    c("10k20" = "10k20",
                      "10k50" = "10k50",
@@ -35,7 +35,7 @@ shinyUI(pageWithSidebar(
                       "UNEAK9"="UNEAK9"),selected="10k20", multiple=TRUE)
  
      
-    )
+    
  
     
  
