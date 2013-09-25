@@ -6,10 +6,10 @@ masterglmmlm.test <- read.csv("masterglmmlm.q.csv", stringsAsFactors=F)
 
  
 shinyServer(function(input, output) {
- #output$plottext<-renderText({
+ output$plottext<-renderText({input$GLMMLM}),
 
  
-  output$main_plot <- renderPlot(function(input, output){
+  output$main_plot <- renderPlot({
     #get subset of data based on selection
     #plot.temp<-reative({
    gl1<-input$GLMMLM
