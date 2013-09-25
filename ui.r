@@ -7,9 +7,9 @@ shinyUI(pageWithSidebar(
   sidebarPanel(
  
     selectInput("Trait", "Trait:",
-                   list("yBLUP"="ALL" ,
-                     "yBLUPATH"="ATH" ,
-                     "yBLUP.ARD" ="ARD"
+                   list("ALL"="yBLUP",
+                     "ATH"="yBLUPATH" ,
+                     "ARD"="yBLUP.ARD" 
                       ), selected="ALL", multiple=TRUE)
  
       
