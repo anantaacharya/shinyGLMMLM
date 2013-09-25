@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 
 
-masterglmmlm.test <- read.csv("masterglmmlm.q.csv", stringsAsFactors=F)
+masterglmmlm.test <- read.csv("masterglmmlm.q.csv", stringsAsFactors=FALSE)
 
  
 shinyServer(function(input, output) {
