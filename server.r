@@ -29,15 +29,15 @@ shinyServer(function(input, output) {
 df1<-c("10k20","UNEAK9")
 model1<-c("PC","Q")
  
-    m2<-subset(masterglmmlm.test,blupL %in% tr1 & GLMMLM %in% gl1 & model %in% model1 & df %in% df1,drop=FALSE)
+   # m2<-subset(masterglmmlm.test,blupL %in% tr1 & GLMMLM %in% gl1 & model %in% model1 & df %in% df1,drop=FALSE)
     
 
     
-    p<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model)), data=m2)+geom_point(aes(shape=df))+facet_wrap(~Locus)
+    #p<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model)), data=m2)+geom_point(aes(shape=df))+facet_wrap(~Locus)
    
     #print(p)
     
-     q<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model)), data=plot.temp())+geom_point(aes(shape=df))+facet_wrap(~Locus)
+     q<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model,Trait)), data=plot.temp())+geom_point(aes(shape=df))+facet_wrap(~Locus)
    
     print(q)
     
