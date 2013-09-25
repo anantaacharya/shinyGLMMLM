@@ -6,6 +6,16 @@ shinyUI(pageWithSidebar(
  
   sidebarPanel(
  
+    selectInput("Trait", "Trait:",
+                   list("yBLUP"="ALL" ,
+                     "yBLUPATH"="ATH" ,
+                     "yBLUP.ARD" ="ARD"
+                      ), selected="ALL", multiple=TRUE)
+ 
+      
+    ,
+ 
+    
     
       selectInput("GLMMLM", "GLMMLM:",
                    list("GLM"="GLM" ,
