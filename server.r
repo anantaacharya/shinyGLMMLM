@@ -33,7 +33,7 @@ model1<-c("PC","Q")
     
 
     
-    p<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model)), data=m2)+geom_point(aes(shape=df))+facet_wrap(~Locus)
+    p<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model)), data=masterglmmlm.test)+geom_point(aes(shape=df))+facet_wrap(~Locus)
    
     print(p)
   })
