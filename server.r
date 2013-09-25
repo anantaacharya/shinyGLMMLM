@@ -12,9 +12,9 @@ shinyServer(function(input, output) {
   output$main_plot <- renderPlot({
     #get subset of data based on selection
     #plot.temp<-reative({
-  # gl1<-input$GLMMLM
-   #df1<-input$df
-   #model1<-input$model1
+   gl1<-input$GLMMLM
+   df1<-input$df
+   model1<-input$model1
 #gl1<-c("MLM","K-EMMA")
 #df1<-c("10k20","UNEAK9")
 #model1<-c("PC","Q")
