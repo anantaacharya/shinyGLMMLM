@@ -10,7 +10,7 @@ shinyUI(pageWithSidebar(
     
     checkboxInput("GLM",    label = "GLM"),
     checkboxInput("MLM",    label = "MLM"),
-    checkboxInput("K-EMMA",    label = "K-EMMA"),
+    checkboxInput("K-EMMA",    label = "K-EMMA", TRUE),
     checkboxInput("K-SSR",    label = "K-SSR")
       
  
@@ -21,7 +21,7 @@ shinyUI(pageWithSidebar(
    
    checkboxInput("NAIVE",    label = "NAIVE"),
     checkboxInput("PC",    label = "PC"),
-    checkboxInput("Q",    label = "Q")
+    checkboxInput("Q",    label = "Q", TRUE)
     
       
     ),
@@ -29,7 +29,7 @@ shinyUI(pageWithSidebar(
  wellPanel(
  
  
- checkboxInput("s10k20",    label = "s10k20"),
+ checkboxInput("s10k20",    label = "s10k20", TRUE),
     checkboxInput("s10k50",    label = "s10k50"),
     checkboxInput("UNEAK3",    label = "UNEAK3"),
     checkboxInput("UNEAK4",    label = "UNEAK4"),
