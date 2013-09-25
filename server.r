@@ -12,6 +12,7 @@ shinyServer(function(input, output) {
   output$main_plot <- renderPlot({
     #get subset of data based on selection
     plot.temp <- reactive({
+    tr1<-input$Trait
     gl1<-input$GLMMLM
    df1<-input$df
    model1<-input$model1
@@ -19,7 +20,7 @@ shinyServer(function(input, output) {
 #df1<-c("10k20","UNEAK9")
 #model1<-c("PC","Q")
  
-    masterglmmlm.test[masterglmmlm.test$GLMMLM %in% gl1 & masterglmmlm.test$model %in% model1 & masterglmmlm.test$df %in% df1,,drop=FALSE]
+    masterglmmlm.test[masterglmmlm.test$Trait%in% tr1 & masterglmmlm.test$GLMMLM %in% gl1 & masterglmmlm.test$model %in% model1 & masterglmmlm.test$df %in% df1,,drop=FALSE]
     
   })
    
