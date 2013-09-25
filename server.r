@@ -24,7 +24,13 @@ model1<-c("PC","Q")
     masterglmmlm.test[masterglmmlm.test$Trait%in% tr1 & masterglmmlm.test$GLMMLM %in% gl1 & masterglmmlm.test$model %in% model1 & masterglmmlm.test$df %in% df1,,drop=FALSE]
     
   })
-   
+   tr1<-c("ALL")
+   gl1<-c("MLM","K-EMMA")
+df1<-c("10k20","UNEAK9")
+model1<-c("PC","Q")
+ 
+    masterglmmlm.test[masterglmmlm.test$Trait%in% tr1 & masterglmmlm.test$GLMMLM %in% gl1 & masterglmmlm.test$model %in% model1 & masterglmmlm.test$df %in% df1,,drop=FALSE]
+    
 
     
     p<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model)), data=plot.temp())+geom_point(aes(shape=df))+facet_wrap(~Locus)
