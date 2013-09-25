@@ -5,7 +5,7 @@ library(ggplot2)
 masterglmmlm.test <- read.csv("masterglmmlm.q.csv", header=T, stringsAsFactors=FALSE)
 #make everythong character
 masterglmmlm.test[,1]<-as.character(masterglmmlm.test[,1])
-masterglmmlm.test[,2]<-as.character(masterglmmlm.test[,1])
+masterglmmlm.test[,2]<-as.character(masterglmmlm.test[,2])
 masterglmmlm.test[,12]<-as.character(masterglmmlm.test[,12])
 masterglmmlm.test[,13]<-as.character(masterglmmlm.test[,13])
 masterglmmlm.test[,14]<-as.character(masterglmmlm.test[,14])
@@ -78,10 +78,10 @@ shinyServer(function(input, output) {
     }
    
   
-   #gl1<-c("MLM","K-EMMA")
-#df1<-c("10k20","UNEAK9")
-#model1<-c("PC","Q")
- #tr1<-c("yBLUP")
+   gl1<-c("MLM","K-EMMA")
+df1<-c("10k20","UNEAK9")
+model1<-c("PC","Q")
+ tr1<-c("yBLUP")
     masterglmmlm.test[masterglmmlm.test$Trait %in% tr1 & masterglmmlm.test$GLMMLM %in% gl1 & masterglmmlm.test$model %in% model1 & masterglmmlm.test$df %in% df1,,drop=FALSE]
     
   })
