@@ -56,9 +56,6 @@ shinyServer(function(input, output) {
    print(paste(df1, model1, gl1))
  })
  
-plot.temp <- reactive({
-    #if else for kinships
-    
    
  
   output$main_plot <- renderPlot({
