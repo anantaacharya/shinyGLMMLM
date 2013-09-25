@@ -6,7 +6,7 @@ masterglmmlm.test <- read.csv("masterglmmlm.q.csv", stringsAsFactors=F)
 
  
 shinyServer(function(input, output) {
- output$textout<-renderText({input$GLMMLM}),
+ output$textout<-renderText({input$GLMMLM})
 
  
   output$main_plot <- renderPlot({
