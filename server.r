@@ -21,7 +21,7 @@ shinyServer(function(input, output) {
     plot.temp <- reactive({
     
     tr1=vector(mode="character")
-    if (input$All) {
+    if (input$ALL) {
       tr1<-c(trl1,"yBLUP")
     }
      if (input$ATH) {
