@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 
 
-masterglmmlm.test <- read.csv("masterglmmlm.q.csv", stringsAsFactors=F)
+masterglmmlm.test <- read.csv("masterglmmlm.q.csv", header=T, stringsAsFactors=F)
 
  
 shinyServer(function(input, output) {
@@ -21,7 +21,7 @@ shinyServer(function(input, output) {
 #df1<-c("10k20","UNEAK9")
 #model1<-c("PC","Q")
  
-    subset(masterglmmlm.test,Trait %in% tr1 & GLMMLM %in% gl1 & model %in% model1 & df %in% df1,drop=FALSE)
+    subset(masterglmmlm.test,blupL %in% tr1 & GLMMLM %in% gl1 & model %in% model1 & df %in% df1,drop=FALSE)
     
   })
    tr1<-c("ALL")
@@ -29,7 +29,7 @@ shinyServer(function(input, output) {
 df1<-c("10k20","UNEAK9")
 model1<-c("PC","Q")
  
-    m2<-subset(masterglmmlm.test,Trait %in% tr1 & GLMMLM %in% gl1 & model %in% model1 & df %in% df1,drop=FALSE)
+    m2<-subset(masterglmmlm.test,blupL %in% tr1 & GLMMLM %in% gl1 & model %in% model1 & df %in% df1,drop=FALSE)
     
 
     
