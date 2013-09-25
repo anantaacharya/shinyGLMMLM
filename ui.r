@@ -29,8 +29,8 @@ shinyUI(pageWithSidebar(
  wellPanel(
  
  
- checkboxInput("10k20",    label = "10k20"),
-    checkboxInput("10k50",    label = "10k50"),
+ checkboxInput("s10k20",    label = "s10k20"),
+    checkboxInput("s10k50",    label = "s10k50"),
     checkboxInput("UNEAK3",    label = "UNEAK3"),
     checkboxInput("UNEAK4",    label = "UNEAK4"),
     checkboxInput("UNEAK8",    label = "UNEAK8"),
