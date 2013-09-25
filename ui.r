@@ -6,6 +6,18 @@ shinyUI(pageWithSidebar(
  
   sidebarPanel(
  
+   wellPanel(
+    
+    checkboxInput("ALL",    label = "ALL",  TRUE),
+    checkboxInput("ARD",    label = "ARD"),
+    checkboxInput("ATH",    label = "ATH"),
+    
+      
+ 
+      
+    ),
+ 
+ 
     wellPanel(
     
     checkboxInput("GLM",    label = "GLM"),
