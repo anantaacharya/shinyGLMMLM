@@ -43,6 +43,7 @@ shinyUI(pageWithSidebar(
   ),
  
   mainPanel(
+   htmlOutput(outputId="textout"),
     plotOutput(outputId = "main_plot")
  
   
