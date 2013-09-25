@@ -15,7 +15,7 @@ shinyServer(function(input, output) {
     tr1<-input$Trait
     gl1<-input$GLMMLM
    df1<-input$df
-   model1<-input$model1
+   model1<-input$model
    #tr1<-c("ALL")
    #gl1<-c("MLM","K-EMMA")
 #df1<-c("10k20","UNEAK9")
