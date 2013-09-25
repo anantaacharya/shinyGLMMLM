@@ -62,7 +62,7 @@ shinyServer(function(input, output) {
     #get subset of data based on selection
     plot.temp <- reactive({
     #if else for kinships
-    gl1=vector()
+    gl1=vector(mode="character")
     if (input$GLM) {
       gl1<-c(gl1,"GLM")
     }
@@ -75,7 +75,7 @@ shinyServer(function(input, output) {
     if (input$K-EMMA) {
       gl1<-c(gl1,"K-EMMA")
     }
-   model1<-vector()
+   model1<-vector(mode="character")
    if (input$NAIVE) {
       model1<-c(model1,"NAIVE")
     }
@@ -87,7 +87,7 @@ shinyServer(function(input, output) {
     }
    
    
-   df1<-vector()
+   df1<-vector(mode="character")
    if (input$s10k20) {
       df1<-c(df1,"10k20")
     }
