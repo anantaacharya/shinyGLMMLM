@@ -37,7 +37,7 @@ model1<-c("PC","Q")
    
     #print(p)
     
-     q<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model,Trait)), data=plot.temp())+geom_point(aes(shape=df))+facet_wrap(~Locus)
+     q<-ggplot(aes(pos, -log10(p), colour=interaction(GLMMLM, model,blupL)), data=plot.temp())+geom_point(aes(shape=df))+facet_wrap(~Locus)
    
     print(q)
     
