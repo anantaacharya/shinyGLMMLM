@@ -10,7 +10,7 @@ shinyUI(pageWithSidebar(
     
     checkboxInput("ALL",    label = "ALL",  TRUE),
     checkboxInput("ARD",    label = "ARD"),
-    checkboxInput("ATH",    label = "ATH"),
+    checkboxInput("ATH",    label = "ATH")
     
       
  
