@@ -22,13 +22,13 @@ shinyServer(function(input, output) {
     
     tr1=vector(mode="character")
     if (input$ALL) {
-      tr1<-c(trl1,"yBLUP")
+      tr1<-c(tr1,"yBLUP")
     }
      if (input$ATH) {
-      tr1<-c(trl1,"yBLUPATH")
+      tr1<-c(tr1,"yBLUPATH")
     }
      if (input$ARD) {
-      tr1<-c(trl1,"yBLUP.ARD")
+      tr1<-c(tr1,"yBLUP.ARD")
     }
     
     #if else for kinships
