@@ -18,8 +18,8 @@ shinyUI(pageWithSidebar(
     
     
       selectInput("GLMMLM", "GLMMLM:",
-                   list("GLM"="GLM" ,
-                     "MLM"="MLM" ,
+                   list("No Q"="No Q" ,
+                     "K-TASSEL"="K-TASSEL" ,
                      "K-EMMA" ="K-EMMA",
                       "K-SSR"="K-SSR"), selected="K-EMMA", multiple=TRUE)
  
@@ -28,9 +28,10 @@ shinyUI(pageWithSidebar(
  
    
       selectInput("model", "model:",
-                   list("NAIVE" ="NAIVE",
+                   list("No kinship" ="No kinship",
                      "PC" ="PC",
-                     "Q" ="Q"), selected="Q", multiple=TRUE)
+                     "Q3" ="Q3"), 
+                     "Q2" ="Q2"),selected="Q", multiple=TRUE)
  
       
     ,
