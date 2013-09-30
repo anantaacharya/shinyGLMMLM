@@ -30,8 +30,8 @@ shinyUI(pageWithSidebar(
       selectInput("model", "model:",
                    list("No kinship" ="No kinship",
                      "PC" ="PC",
-                     "Q3" ="Q3", 
-                     "Q2" ="Q2"),selected="Q", multiple=TRUE)
+                     "Q2" ="Q2", 
+                     "Q3" ="Q3"),selected="Q3", multiple=TRUE)
  
       
     ,
